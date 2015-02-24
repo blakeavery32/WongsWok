@@ -39,15 +39,30 @@ of those sections to manage the look and feel of the site. */
     color: yellow;
 }
 
-.location-section {
+.order-section {
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: center;
     background: #ffff00;
     color: red;
 }
 
+.location-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: #FF3333;
+    color: yellow;
+}
+
 .social-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: #ffff00;
+    color:red;
+}
+
+.photos-section {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
@@ -55,12 +70,9 @@ of those sections to manage the look and feel of the site. */
     color:yellow;
 }
 
-.photos-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    background: #FFff00;
-    color:red;
+.btn-primary{
+    background-color: red;
+    border-color: white;
 }
 
 img{
