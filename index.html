@@ -17,6 +17,25 @@
 
   <title> Wong's Wok </title>
 
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script>
+  function initialize() {
+    var mapProp = {
+      center:new google.maps.LatLng(38.655495,-90.305494),
+      zoom:15,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googlemap"),mapProp);
+    var marker=new google.maps.Marker({
+      position:new google.maps.LatLng(38.655495,-90.305494),
+    });
+
+    marker.setMap(map);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+  </script>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -366,8 +385,9 @@
               <h3> 565 Melville Ave.</h3>
               <h3> St. Louis, MO 63130</h3>
               <h3> Phone: (314)-726-0976</h3>
-                <div class = "col-md-6 col-md-offset-1">
-                  <img src="https://www.google.com/maps/vt/data=U4aSnIyhBFNIJ3A8fCzUmaVIwyWq6RtIfB4QKiGq_w,oKu9UyBJpA7r5SX_ItYYUd6WCzllVVV2OmB2wg6QxPkv_QFXuKF8duv78dAdm4axLbrUzBdcHHNjdykq3mojIUI5Ue4QuF9BUjaltq-YMcp9C8Um6cS4HCwfIWAIcqgKiDQqBy5MN2EUWw"> 
+              <div class = "caption">
+                <div id="googlemap" class = "map">
+                </div>
               </div>
             </div>
           </div>
